@@ -49,6 +49,11 @@ class Mail
                 $host = 'smtp.vip.163.com';
                 $secure = 'ssl';
                 $port = 465;
+            } else if (stripos($username, '@126.com') !== false) {
+                $host = 'smtp.126.com';
+                $secure = 'ssl';
+                $port = 465;
+            }
             } else if (stripos($username, '@outlook.com') !== false) {
                 $host = 'smtp.office365.com';
                 $secure = 'starttls';
